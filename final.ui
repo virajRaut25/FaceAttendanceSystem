@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1107</width>
+    <height>831</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="loginWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>40</y>
+      <width>881</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>170</y>
+       <width>371</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(56,50,147,240), stop:1 rgba(55,134,85,240));
+border-radius: 10px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>210</y>
+       <width>311</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255,255,255,255);
+border-radius: 10px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>230</y>
+       <width>121</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cascadia Code</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Log In</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="userNameField">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>290</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cascadia Code</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(0,0,0,0);
+border: 2px solid rgba(0,0,0,0);
+border-bottom-color:rgba(45,82,101,200);
+color:rgb(0,0,0);
+padding-bottom: 7px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>userName</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="passwordField">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>360</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cascadia Code</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(0,0,0,0);
+border: 2px solid rgba(0,0,0,0);
+border-bottom-color:rgba(45,82,101,200);
+color:rgb(0,0,0);
+padding-bottom: 7px;</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>password</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="loginButton">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>430</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#loginButton{
+	background-color: rgba(85,98,112,255);
+	color: rgba(255,255,255,200);
+	border-radius: 5px;
+}
+
+QPushButton#loginButton:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(55,134,85,240);
+	background-position: calc(100% - 10px)center;
+}
+
+QPushButton#loginButton:hover{
+	background-color: rgba(55,134,85,240);
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Log In</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>500</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <underline>true</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pushButton{
+	background-color: rgba(255,255,255,200);
+	color: rgba(27, 102, 202,250);
+	border-radius: 5px;
+}</string>
+     </property>
+     <property name="text">
+      <string>forgot password?</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>190</y>
+       <width>211</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cascadia Code</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgba(255,255,255,220);</string>
+     </property>
+     <property name="text">
+      <string>FACE
+ATTENDANCE
+SYSTEM</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="mainWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>1081</width>
+      <height>811</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="backLabel">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>10</y>
+       <width>981</width>
+       <height>781</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(56,50,147,240), stop:1 rgba(55,134,85,240));
+border-radius: 10px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="homeButton">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>80</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#homeButton{
+	color: rgba(250,255,255,200);
+    padding-left: 5px;
+	padding-top: 5px;
+	background-color:rgba(0,0,0,0);
+    border: 5px solid rgba(0,0,0,0);
+	border-left-color:rgba(55,134,85,240);
+	transition: 0.8s;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+QPushButton#homeButton:hover,
+QPushButton#homeButton:focus{
+	color: white;
+};
+</string>
+     </property>
+     <property name="text">
+      <string>Home</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="registrationPButton">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>140</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#registrationPButton{
+	background-color: rgba(0,0,0,20);
+	color: rgba(250,255,255,200);
+}
+
+QPushButton#registrationPButton:pressed,#registrationPButton:active{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color:rgba(0,0,0,0);
+    border: 5px solid rgba(0,0,0,0);
+	border-left-color:rgba(55,134,85,240);
+}</string>
+     </property>
+     <property name="text">
+      <string>Registration</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="takeAttendButton">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>200</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#takeAttendButton{
+	background-color: rgba(0,0,0,20);
+	color: rgba(250,255,255,200);
+}
+
+QPushButton#takeAttendButton:pressed,#takeAttendButton:active{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color:rgba(0,0,0,0);
+    border: 5px solid rgba(0,0,0,0);
+	border-left-color:rgba(55,134,85,240);
+}</string>
+     </property>
+     <property name="text">
+      <string>Take Attendance</string>
+     </property>
+    </widget>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>801</width>
+       <height>761</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(255,255,255,255);
+border-radius:10px</string>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="homePage">
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px</string>
+      </property>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>190</width>
+         <height>176</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cascadia Code</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Welcome To
+Face
+Attendane
+System</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="registrationPage">
+      <property name="styleSheet">
+       <string notr="true">background-color:rgba(255,255,255,255);
+border-radius:10px</string>
+      </property>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>211</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cascadia Code</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Register Here</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="firstNEnt">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+	border: 2px solid rgb(34, 39, 48);
+	border-radius: 10px;
+	color: #000;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(255,255,255);
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(48,50,62);
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(35,170,255);
+	background-color: rgb(255,255,255);
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>Ex:Abc</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lastNEnt">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>170</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+	border: 2px solid rgb(34, 39, 48);
+	border-radius: 10px;
+	color: #000;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(255,255,255);
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(48,50,62);
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(35,170,255);
+	background-color: rgb(255,255,255);
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>Ex:Xyz</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="studentIdEnt">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+	border: 2px solid rgb(34, 39, 48);
+	border-radius: 10px;
+	color: #000;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(255,255,255);
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(48,50,62);
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(35,170,255);
+	background-color: rgb(255,255,255);
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>Ex:2022FHXXXXX</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="genderBox">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>250</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 2px solid rgb(34, 39, 48);
+	border-radius: 10px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 18px;
+
+    border-left-width: 1px;
+    border-left-color: #000;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>161</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Student ID:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_34">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>150</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>First Name:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>150</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Last Name: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_36">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>230</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Date of Birth:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_37">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>230</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Gender:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_38">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>311</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Department:</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="departmentBox">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>330</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 2px solid rgb(34, 39, 48);
+	border-radius: 10px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 18px;
+
+    border-left-width: 1px;
+    border-left-color: #000;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="emailEnt">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>410</y>
+         <width>371</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+	border: 2px solid rgb(34, 39, 48);
+	border-radius: 10px;
+	color: #000;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(255,255,255);
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(48,50,62);
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(35,170,255);
+	background-color: rgb(255,255,255);
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>Example@gmail.com</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_39">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>390</y>
+         <width>55</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Email:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="registerButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>470</y>
+         <width>181</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#registerButton{
+	background-color: rgba(85,98,112,255);
+	color: rgba(255,255,255,200);
+	border-radius: 5px;
+}
+
+QPushButton#registerButton:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(55,134,85,240);
+	background-position: calc(100% - 10px)center;
+}
+
+QPushButton#registerButton:hover{
+	background-color: rgba(55,134,85,240);
+}</string>
+       </property>
+       <property name="text">
+        <string>Register</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="imgLabel">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>70</y>
+         <width>361</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="startCamButton">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>470</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#startCamButton{
+	background-color: rgba(85,98,112,255);
+	color: rgba(255,255,255,200);
+	border-radius: 5px;
+}
+
+QPushButton#startCamButton:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(55,134,85,240);
+	background-position: calc(100% - 10px)center;
+}
+
+QPushButton#startCamButton:hover{
+	background-color: rgba(55,134,85,240);
+}</string>
+       </property>
+       <property name="text">
+        <string>Start Cam</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="CaptureButton">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>470</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#CaptureButton{
+	background-color: rgba(85,98,112,255);
+	color: rgba(255,255,255,200);
+	border-radius: 5px;
+}
+
+QPushButton#CaptureButton:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(55,134,85,240);
+	background-position: calc(100% - 10px)center;
+}
+
+QPushButton#CaptureButton:hover{
+	background-color: rgba(55,134,85,240);
+}</string>
+       </property>
+       <property name="text">
+        <string>Capture</string>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="dobEnt">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>250</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QDateEdit {
+    border: 2px solid rgb(34, 39, 48);
+	border-radius: 10px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QDateEdit:editable {
+    background: white;
+}
+
+
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 18px;
+
+    border-left-width: 1px;
+    border-left-color: #000;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+
+QDateEdit::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_40">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>310</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Year:</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="yearBox">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>330</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 2px solid rgb(34, 39, 48);
+	border-radius: 10px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 18px;
+
+    border-left-width: 1px;
+    border-left-color: #000;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_41">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>80</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Div:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="divEnt">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>100</y>
+         <width>71</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+	border: 2px solid rgb(34, 39, 48);
+	border-radius: 10px;
+	color: #000;
+	padding-left: 10px;
+	padding-right: 20px;
+	background-color: rgb(255,255,255);
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(48,50,62);
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(35,170,255);
+	background-color: rgb(255,255,255);
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>Ex:A</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_42">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>80</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Roll No.:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="rollEnt">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>100</y>
+         <width>71</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+	border: 2px solid rgb(34, 39, 48);
+	border-radius: 10px;
+	color: #000;
+	padding-left: 10px;
+	padding-right: 20px;
+	background-color: rgb(255,255,255);
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(48,50,62);
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(35,170,255);
+	background-color: rgb(255,255,255);
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>Ex:01</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="takeAttendance">
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px</string>
+      </property>
+      <widget class="QLabel" name="label_43">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cascadia Code</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Take Attendance</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="attendCapLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>781</width>
+         <height>611</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="startCapButton">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>700</y>
+         <width>161</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#startCapButton{
+	background-color: rgba(85,98,112,255);
+	color: rgba(255,255,255,200);
+	border-radius: 5px;
+}
+
+QPushButton#startCapButton:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(55,134,85,240);
+	background-position: calc(100% - 10px)center;
+}
+
+QPushButton#startCapButton:hover{
+	background-color: rgba(55,134,85,240);
+}</string>
+       </property>
+       <property name="text">
+        <string>Start</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="stopCapButton">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>700</y>
+         <width>161</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#stopCapButton{
+	background-color: rgba(85,98,112,255);
+	color: rgba(255,255,255,200);
+	border-radius: 5px;
+}
+
+QPushButton#stopCapButton:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(55,134,85,240);
+	background-position: calc(100% - 10px)center;
+}
+
+QPushButton#stopCapButton:hover{
+	background-color: rgba(55,134,85,240);
+}</string>
+       </property>
+       <property name="text">
+        <string>Stop</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
